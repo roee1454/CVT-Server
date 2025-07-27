@@ -34,6 +34,7 @@ import { AppService } from './app.service';
 import { SystemModule } from './system/system.module';
 import { SystemEntity } from './system/system.entity';
 import { MemberModule } from './member/member.module';
+import { MemberEntity } from './member/member.entity';
 
 @Module({
   imports: [
@@ -58,7 +59,8 @@ import { MemberModule } from './member/member.module';
         TaskEntity,
         InquiryEntity,
         ContainerEntity,
-        SystemEntity
+        SystemEntity,
+        MemberEntity
       ],
       synchronize: true
     }),
